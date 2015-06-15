@@ -1,0 +1,4 @@
+.statusA {fill: black; height:10;}
+.statusA:hover {fill: gray;}
+.statusB {fill: blue; height:10;}
+.statusB:hover {fill: lightblue;}
