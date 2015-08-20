@@ -4,9 +4,7 @@
  *
  * Distributed under terms of the MIT license.
  */
-
-// set up the map
-var map = L.map('map').setView([37.77, -122.24], 11);
+var map = L.map('map').setView([37.77, -122.04], 9);
 
 var mapQuestAttr = 'Tiles Courtesy of <a href="http://www.mapquest.com/">MapQuest</a> &mdash; ';
 var osmDataAttr = 'Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
@@ -20,18 +18,13 @@ var mq = L.tileLayer(mopt.url, mopt.options);
 mq.addTo(map);
 
 function popUp(f,l){
-    var out = [];
-    if (f.properties){
-        for(key in f.properties){
-            out.push(key+": "+f.properties[key]);
-        }
-        l.bindPopup(out.join("<br />"));
-    }
+    l.bindPopup("[" + f.properties["DISTRICT_I"] + "] " +
+                f.properties["DIST_NAME"])
 }
 
-//var jsonTest = new L.GeoJSON.AJAX("data/AlamedaUnifiedSchools.json",
-//                                  {onEachFeature: popUp}).addTo(map);
-var jsonTest = new L.GeoJSON.AJAX("data/AlamedaUnifiedSchools.json").addTo(map);
+var jsonSchools = new L.GeoJSON.AJAX("data/UnifiedSchool.json",
+                                     {onEachFeature: popUp});
+jsonSchools.addTo(map);
 
 var baseMaps = {
     "Map Quest": mq,
@@ -39,7 +32,7 @@ var baseMaps = {
 };
 
 var overlays={
-"json":jsonTest,
+"json": jsonSchools,
 }
 
 var lc = L.control.layers(baseMaps, overlays);
