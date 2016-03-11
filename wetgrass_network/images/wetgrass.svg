@@ -76,7 +76,7 @@
   <rect x="100" y="30" width="50" height="150"
         style="fill: rgb(237,241,184); stroke: none;"/>
 
-  <text x="205" y="20">Grass</text>
+  <text x="205" y="20">Grass wet</text>
   <!-- row 1 -->
   <text x="50"  y="50">Sprinkler</text>
   <text x="125"  y="50">Rain</text>
@@ -125,7 +125,7 @@
 <g id="grass" transform="translate(350, 250)">
   <ellipse cx="0" cy="0" rx="50" ry="30"
            style="stroke: black; stroke-width: 1; fill: rgb(241,223,184);"/>
-  <text x="0" y="5">Grass</text>
+  <text x="0" y="5">Grass wet</text>
 </g>
 
 <!-- DEFINE ARROW MARKER -->

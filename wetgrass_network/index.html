@@ -1,60 +1,117 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>chrisstrelioff.ws :: vizdiv :: wet grass network</title>
+    <title>vizdiv &raquo; wet grass network</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <link rel="stylesheet" href= "../css/reset.css">
-    <link rel="stylesheet" href= "../css/main.css">
+
+    <meta name="description" content="Chris Strelioff's vizdiv -- visualization using html, css, js, svg and more.">
+    <meta name="author" content="Christopher Strelioff">
+    <meta name="keywords" content="js, html, css, d3js, leafletjs, svg">
+
+   
+    <!-- css --> 
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/vizdiv.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
   
   </head>
+
   <body>
 
-  <div id="fullpage">
+  <div class="container">
 
-    <header role="banner" id="header">
+    <!-- Static navbar -->
+    <div class="page-header">
+      <h1>vizdiv &raquo; wet grass network</h1>
 
-      <p><strong>wet grass Bayesian network</strong><br>
-         -- a graphical representation</p>
+      <ul class="nav nav-tabs">
+        <li><a href="../">index</a></li>
+        <li><a href="../about.html">about</a></li>
+        <li class="active"><a href="../"> wet grass network</a></li>
+      </ul>      
+      
+    </div>
 
-    </header>
+    <!-- main page content -->
+    <div class="row">
 
-    <article id="main">
+      <div class="col-xs-12 col-sm-8">
 
-      <object data="images/wetgrass.svg" type="image/svg+xml"
-              title="Wet Grass Network"
-              alt="Visualization of wet grass Bayesian network" >
+        <object data="images/wetgrass.svg" type="image/svg+xml"
+                title="Wet Grass Network"
+                alt="Visualization of wet grass Bayesian network" >
           <!-- As a fallback, include text or a raster image file -->
           <p>No SVG support!</p>
-      </object>
+        </object>
 
-    </article>
-    
-    <aside role="complementary" id="notes">
 
+      </div><!-- end col -->
+
+      <div class="col-xs-12 col-sm-4">
+
+      <h2>info</h2>
+
+        <p> Checkout the following for more about this viz:
+          <ul class="list-unstyled ul-vizdiv">
+             <li>See
+             <a href="https://en.wikipedia.org/wiki/Bayesian_network#Example" target="_blank">wikipedia</a> 
+             for more information about the ideas</li> 
+             <li> A
+             <a href="http://healthyalgorithms.com/2011/11/23/causal-modeling-in-python-bayesian-networks-in-pymc/" target="_blank">
+             python implementation</a> of the network using PyMC.
+         </ul>
+        </p>
+
+        <h2>links</h2>
+
+        <p>
+          <ul class="list-unstyled ul-vizdiv">
+            <li><a href="https://github.com/cstrelioff/vizdiv/tree/master/wetgrass_network"
+                   target="_blank">files for this page</a></li>
+            <li><a href="http://www.colourlovers.com/palette/3818940/pokus3"
+                   target="_blank">colo(u)r palette</a>
+            </li>
+          </ul>
+        </p>
+
+      </div><!-- end col -->
+
+    </div><!-- end row -->
+
+    <!-- footer -->
+    <footer class="container-fluid text-center">
       <p>
-        <ul>
-          <li><a href="../"><strong>vizdiv index</strong></a></li>
-          <li><a href="https://github.com/cstrelioff/vizdiv/tree/master/wetgrass_network"
-                 target="_blank">files for this page</a></li>
-          <li><a href="http://www.colourlovers.com/palette/3818940/pokus3"
-                 target="_blank">colo(u)r palette</a>
-          </li>
-        </ul>
+        2015 - 2016 &nbsp; Christopher C. Strelioff
       </p>
-
-
-    </aside>
-
-    <footer role="contentinfo" id="footer">
-      <p>2015 - Christoper C. Strelioff - </p>
+      <p>
+        <a target="_blank" href="http://getbootstrap.com">bootstrap</a>
+        <a target="_blank"  href="http://bootswatch.com/">[ sandstone theme ]</a>
+      </p>
     </footer>
 
-  </div> <!-- end fullpage -->
+  </div> <!-- end fullpage container -->
 
   <!-- javascript links -->
+  <script src="../js/jquery-1.12.0.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap-3.3.6.min.js" type="text/javascript"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-75030411-1', 'auto');
+    ga('send', 'pageview');
+  
+  </script>
 
   </body>
-
 </html>

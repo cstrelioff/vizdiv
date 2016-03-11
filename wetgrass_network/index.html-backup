@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>chrisstrelioff.ws :: vizdiv :: wet grass network</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href= "../css/reset.css">
+    <link rel="stylesheet" href= "../css/main.css">
+  
+  </head>
+  <body>
+
+  <div id="fullpage">
+
+    <header role="banner" id="header">
+
+      <p><strong>wet grass Bayesian network</strong><br>
+         -- a graphical representation</p>
+
+    </header>
+
+    <article id="main">
+
+      <object data="images/wetgrass.svg" type="image/svg+xml"
+              title="Wet Grass Network"
+              alt="Visualization of wet grass Bayesian network" >
+          <!-- As a fallback, include text or a raster image file -->
+          <p>No SVG support!</p>
+      </object>
+
+    </article>
+    
+    <aside role="complementary" id="notes">
+
+      <p>
+        <ul>
+          <li><a href="../"><strong>vizdiv index</strong></a></li>
+          <li><a href="https://github.com/cstrelioff/vizdiv/tree/master/wetgrass_network"
+                 target="_blank">files for this page</a></li>
+          <li><a href="http://www.colourlovers.com/palette/3818940/pokus3"
+                 target="_blank">colo(u)r palette</a>
+          </li>
+        </ul>
+      </p>
+
+
+    </aside>
+
+    <footer role="contentinfo" id="footer">
+      <p>2015 - Christoper C. Strelioff - </p>
+    </footer>
+
+  </div> <!-- end fullpage -->
+
+  <!-- javascript links -->
+
+  </body>
+
+</html>

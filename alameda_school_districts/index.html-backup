@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>chrisstrelioff.ws :: vizdiv :: alameda school districts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href= "../css/reset.css"/>
+    <link rel="stylesheet" href= "../css/main.css"/>
+    <link rel="stylesheet" href= "css/asd.css"/>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/> 
+  
+  </head>
+  <body>
+
+  <div id="fullpage">
+
+    <header role="banner" id="header">
+
+      <p><strong>Alameda County School Districts</strong><br>
+         -- using leafletjs</p>
+
+    </header>
+
+    <article id="main">
+ 
+      <div id="map"></div>
+
+    </article>
+    
+    <aside role="complementary" id="notes">
+
+      <p>
+        <ul>
+          <li><a href="../"><strong>vizdiv index</strong></a></li>
+          <li><a href="https://github.com/cstrelioff/vizdiv/tree/master/alameda_school_districts"
+                 target="_blank">files for this page</a></li>
+        </ul>
+      </p>
+
+
+    </aside>
+
+    <footer role="contentinfo" id="footer">
+      <p>2015 - Christoper C. Strelioff - </p>
+    </footer>
+
+  </div> <!-- end fullpage -->
+
+  <!-- javascript links -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+  <script src="https://raw.github.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js"></script>
+  <script src="js/asd.js"></script>
+
+  </body>
+
+</html>
