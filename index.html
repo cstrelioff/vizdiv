@@ -1,73 +1,110 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>index for vizdiv</title>
+    <title>vivdiv at chrisstrelioff.ws</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <link rel="stylesheet" href= "css/reset.css">
-    <link rel="stylesheet" href= "css/main.css">
+
+    <meta name="description" content="Chris Strelioff's vizdiv -- visualization using html, css, js, svg and more.">
+    <meta name="author" content="Christopher Strelioff">
+    <meta name="keywords" content="js, html, css, d3js, leafletjs, svg">
+
+   
+    <!-- css --> 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/vizdiv.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
   
   </head>
+
   <body>
 
-  <div id="fullpage">
+  <div class="container">
 
-    <header role="banner" id="header">
+    <!-- Static navbar -->
+    <div class="page-header">
+      <h1>vizdiz</h1>
 
-        <h1>vizdiv</h1>
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#">index</a></li>
+        <li><a href="#">about</a></li>
+      </ul>      
+      
+    </div>
 
-    </header>
+    <!-- main page content -->
+    <div class="row">
+      <div class="col-xs-12">
 
-    <article id="main">
-
-       <ul>
+       <ul class="list-unstyled">
          <li><a href="alameda_school_districts/">
-             <strong class="main-date">2015, Aug 19th: </strong> Alameda, CA school districts
+             <strong class="main-date">2015, Aug 19th</strong><br />
+               Alameda, CA school districts
              </a>
              <p class="main">
              A leafletjs map of the Alameda County school districts.
              </p>
          </li>
          <li><a href="wetgrass_network/">
-             <strong class="main-date">2015, July 10th: </strong> wet grass network
+             <strong class="main-date">2015, July 10th</strong><br />
+               wet grass network
              </a>
              <p class="main">
              An svg respresenting the <emph>wet grass</emph> Bayesian network.
              See
-             <a href="https://en.wikipedia.org/wiki/Bayesian_network#Example" target="_blank">here</a> 
-             and
-             <a href="http://healthyalgorithms.com/2011/11/23/causal-modeling-in-python-bayesian-networks-in-pymc/" target="_blank">here</a>
+             <a href="https://en.wikipedia.org/wiki/Bayesian_network#Example" target="_blank">wikipedia</a> 
+             for more information about the ideas and
+             <a href="http://healthyalgorithms.com/2011/11/23/causal-modeling-in-python-bayesian-networks-in-pymc/" target="_blank">
+             this implememtation of the network in Python.</a>
              </p>
          </li>
          <li><a href="people_stats/">
-             <strong class="main-date">2015, June 15th: </strong> people stats
+             <strong class="main-date">2015, June 15th</strong><br />
+               people stats
              </a>
              <p class="main">
-             Use a single svg image and some javascript to display (statistical)
-             properties in a group of people.
+             Use two svg images (one woman and one man) and some javascript to 
+             display properties in a group of people -- random generation 
+             produces a new sample for each reload of the page.
              </p>
          </li>
          <li><a href="d3_bar_chart/">
-             <strong class="main-date">2015, May 28th: </strong> d3 bar chart
+             <strong class="main-date">2015, May 28th</strong><br />
+               d3 bar chart
              </a>
              <p>
-             Testing out the vizdiv setup with a well-known d3js example--sizing
-             by detecting window size added.
+             Testing out the vizdiv setup with a well-known d3js example -- sizing
+             by detecting window size has been added.
              </p>
          </li>
        </ul>
 
-    </article>
+     </div><!-- end col -->
+    </div><!-- end row -->
 
-    <footer role="contentinfo" id="footer">
-      <p>2015 - Christoper C. Strelioff - </p>
+    <!-- footer -->
+    <footer class="container-fluid text-center">
+      <p>
+        2015 - 2016 &nbsp; Christopher C. Strelioff
+      </p>
+      <p>
+        <a target="_blank" href="http://getbootstrap.com">bootstrap</a>
+        <a target="_blank"  href="http://bootswatch.com/">[ sandstone theme ]</a>
+      </p>
     </footer>
 
-  </div> <!-- end fullpage -->
+  </div> <!-- end fullpage container -->
 
   <!-- javascript links -->
-  
-  </body>
+  <script src="js/jquery-1.12.0.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap-3.3.6.min.js" type="text/javascript"></script>
 
+  </body>
 </html>

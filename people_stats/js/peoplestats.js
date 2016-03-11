@@ -76,9 +76,9 @@ function generate() {
   var item1 = document.createElement('li');
   item1.appendChild(document.createTextNode(n_women + " women, " + n_men + " men"));
   var item2 = document.createElement('li');
-  item2.appendChild(document.createTextNode("Women-- " + n_womenA + " status A [black], " + n_womenB + " status B [blue]."));
+  item2.appendChild(document.createTextNode("Women-- " + n_womenA + " A, " + n_womenB + " B."));
   var item3 = document.createElement('li');
-  item3.appendChild(document.createTextNode("Men-- " + n_menA + " status A [black], " + n_menB + " status B [blue]."));
+  item3.appendChild(document.createTextNode("Men-- " + n_menA + " A, " + n_menB + " B."));
 
   list.appendChild(item1);
   list.appendChild(item2);
